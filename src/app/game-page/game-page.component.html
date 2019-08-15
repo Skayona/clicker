@@ -1,0 +1,13 @@
+<div>
+  <p class="text-muted">Count: {{ count }}</p>
+
+  <div class="btn-zone">
+    <button class="btn-game" [ngClass]="gameClass" type="button"
+      (click)="onBtnClick()"
+    >
+      <span> {{ gameStarted ? 'CLICK' : 'START' }}</span>
+    </button>
+  </div>
+
+  <p class="text-muted">Timer: {{ timer }}</p>
+</div>

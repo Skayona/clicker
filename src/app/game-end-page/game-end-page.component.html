@@ -1,0 +1,11 @@
+<div class="card">
+  <div class="card-body">
+    <h2>{{ userName }}, your score is <strong>{{ score }}</strong>!</h2>
+    <p>You are: <strong>{{ result }}</strong></p>
+
+    <div class="actions" *ngIf="!gameEnd">
+      <button class="btn btn-outline-primary" (click)="endGame()">END</button>
+      <a class="btn btn-primary" [routerLink]="['/game']">NEW GAME</a>
+    </div>
+  </div>
+</div>
